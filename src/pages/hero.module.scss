@@ -1,0 +1,88 @@
+.imageHero {
+	position: relative;
+	height: 97vh;
+	margin: 0 0 100px 0; 
+	overflow-x: hidden;
+	overflow-y: auto;
+	perspective: 2px;
+	.container {
+		z-index:3;
+        position: absolute;
+
+        color: white;
+        height: 100%;
+        width: 100%;
+        .content {
+        	height: 100%;
+            width: 100%;
+			text-align: center;
+			display: grid;
+			grid-template-columns: 1fr 2fr 1fr;
+			align-items: center;
+			justify-content: center;
+			.textDiv {
+				grid-column-start: 2;
+				grid-column-end: 3;
+				h3 {
+					color: white;
+					font-size: 600%;
+					margin: 0;
+				}
+				.button {
+		          text-align: center;
+		          a {
+		          	font-family: 'Crimson Text', serif;
+		            text-decoration: none;
+		            color: white;
+		            border: solid 1px;
+		            border-color: white;
+		            border-radius: 25px;
+		            text-align: center;
+		            display: inline-block;
+		            padding: 10px 20px;
+		            transition-duration: 0.4s;
+		            margin: 25px 0 25px 0;
+			            p {
+			              margin: 0;
+			              font-size: 1.5rem;
+			            }
+
+		          }
+			         a:hover {
+			         background-color: white;
+			         color: black;
+		        	}
+				}
+      		}
+      	}
+	}
+	.bgImage {
+	        //overflow: hidden;
+	        
+        	//background-size: 100%;
+	        z-index: 0;
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        width: 100%;
+	        height: 100%;
+	        opacity: 0;
+	        background-position: center;
+	        background-size: cover;
+	        background-blend-mode: darken;
+	        filter: brightness(60%);
+	        img {
+	            overflow: hidden;
+	            min-width: 100%;
+	            min-height: 100%;
+	            position: absolute;
+	            top: 50%;
+	            left: 50%;
+	            //transform: translate3D(-50%,-50%,0);
+	            transform: translateZ(-1px) scale(1.5);
+	        }
+	        video {
+	            object-fit: contain;
+	        }
+	}
+}

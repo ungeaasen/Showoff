@@ -1,0 +1,24 @@
+.container {
+ 	position: absolute;
+    display: inline-block;
+    left:-700px;
+    top:5rem;
+
+		.content {
+			padding: 0.9rem;
+			width: 60vw;
+			background: white;
+			display: inline-block;
+			h1 {
+				margin: 0 0 0.3rem 0;
+
+			}
+			.date {
+				color:gray;
+				font-size: 0.9rem;
+			}
+			.img {
+				width: 50%;
+			}
+		}	
+}
